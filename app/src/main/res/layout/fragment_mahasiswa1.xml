@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anjay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mahasiswa1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutMahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/editNim"
+            android:layout_width="213dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.369"
+            app:layout_constraintStart_toEndOf="@+id/txtNim"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/editNama"
+            android:layout_width="213dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txtNama"
+            app:layout_constraintTop_toBottomOf="@+id/editNim" />
+
+        <EditText
+            android:id="@+id/editTglLhr"
+            android:layout_width="213dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txtTglLhr"
+            app:layout_constraintTop_toBottomOf="@+id/editTmptLhr" />
+
+        <EditText
+            android:id="@+id/editJnsKelamin"
+            android:layout_width="213dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txtJnsKelamin"
+            app:layout_constraintTop_toBottomOf="@+id/editAgama" />
+
+        <EditText
+            android:id="@+id/editAlamat"
+            android:layout_width="213dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txtAlamat"
+            app:layout_constraintTop_toBottomOf="@+id/editJnsKelamin" />
+
+        <EditText
+            android:id="@+id/editTelpon"
+            android:layout_width="213dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txtTelpon"
+            app:layout_constraintTop_toBottomOf="@+id/editAlamat" />
+
+        <EditText
+            android:id="@+id/editAgama"
+            android:layout_width="213dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txtAgama"
+            app:layout_constraintTop_toBottomOf="@+id/editTglLhr" />
+
+        <EditText
+            android:id="@+id/editTmptLhr"
+            android:layout_width="213dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txtTmptLhr"
+            app:layout_constraintTop_toBottomOf="@+id/editNama" />
+
+        <TextView
+            android:id="@+id/txtNim"
+            android:layout_width="63dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:shadowColor="#00070000"
+            android:text="Nim :"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_width="63dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:shadowColor="#00070000"
+            android:text="Nama :"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/txtNim" />
+
+        <TextView
+            android:id="@+id/txtTglLhr"
+            android:layout_width="106dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:shadowColor="#00070000"
+            android:text="Tanggal Lahir :"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/txtTmptLhr" />
+
+        <TextView
+            android:id="@+id/txtAgama"
+            android:layout_width="106dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:shadowColor="#00070000"
+            android:text="Agama :"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/txtTglLhr" />
+
+        <TextView
+            android:id="@+id/txtJnsKelamin"
+            android:layout_width="106dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:shadowColor="#00070000"
+            android:text="Jenis Kelamin :"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/txtAgama" />
+
+        <TextView
+            android:id="@+id/txtAlamat"
+            android:layout_width="106dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:shadowColor="#00070000"
+            android:text="Alamat :"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/txtJnsKelamin" />
+
+        <TextView
+            android:id="@+id/txtTelpon"
+            android:layout_width="106dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:shadowColor="#00070000"
+            android:text="Telpon :"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/txtAlamat" />
+
+        <TextView
+            android:id="@+id/txtTmptLhr"
+            android:layout_width="106dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:shadowColor="#00070000"
+            android:text="Tempat Lahir :"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/txtNama" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Simpan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/editTelpon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
